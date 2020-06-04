@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your shopping cart </title>
+
+    <link rel="stylesheet" href="cartstyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <p class="infolinia">CONTACT US 000 000 000</p>
+        <header>
+
+            <section class="logo0">
+                <section class="social"><a href="#"><img class="social2" src="facebook.png" alt=""></a>
+                    <a href="#"> <img class="social2" src="twitter.png" alt=""></a>
+                    <a href="#"> <img class="social2" src="instagram.png" alt=""> </a></section>
+                <figure class="logo">
+                    <a href="/html/JuliaKomar3i_homepage/index.html"> <img src="LOGO.png" alt=""></a>
+                </figure>
+                <section class="mojekonto"><a href="#">MY ACCOUNT</a></section>
+            </section>
+            <nav class="menu">
+                <div></div>
+                <ul>
+                    <li><a href="/html/categories/categories.html">CATEGORIES</a></li>
+
+                    <li><a href="#">SALE</a></li>
+
+                    <li><a href="#">CONTACT</a></li>
+
+                    <li><a href="#">ALL</a></li>
+                </ul>
+                <input id="wyszukiwarka" type="text" placeholder="SEARCH">
+            </nav>
+        </header>
+
+        <main>
+            <header>
+                <h1>SHOPPING CART</h1>
+            </header>
+            <hr>
+            <section class="cart">
+                <header>
+                    <section class="product">PRODUCT</section>
+                    <section class="elements">PRICE</section>
+                    <section class="quantity">QUANTITY</section>
+                    <section class="elements">TOTAL</section>
+                    <section class="elements">REMOVE</section>
+
+                </header>
+
+                <section class="product1">
+                    <article class="productphoto">
+                        <figure><img src="product1.jpg" alt=""></figure>
+                        <p>Serenity Aesthetic T-Shirt</p>
+                    </article>
+                    <article class="price">
+                        <p>$ 22.50</p>
+                    </article>
+                    <article class="quantity">
+                        <div class="number-input">
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"></button>
+                            <input class="quantity" min="1" name="quantity" value="1" max="9" type="number">
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                                class="plus"></button>
+                        </div>
+                    </article>
+                    <article class="price">
+                        <p>$ 22.50</p>
+                    </article>
+                    <article class="price"><input type="image" class="delete" src="close.png"></input></article>
+                </section>
+                <hr>
+                <section class="product2">
+                    <article class="productphoto">
+                        <figure><img src="product4.jpg" alt=""></figure>
+                        <p>Angel Crop Sweatshirt</p>
+                    </article>
+                    <article class="price">
+                        <p>$ 40.00</p>
+                    </article>
+                    <article class="quantity">
+                        <div class="number-input">
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"></button>
+                            <input class="quantity" min="1" name="quantity" value="1" max="9" type="number">
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                                class="plus"></button>
+                        </div>
+                    </article>
+                    <article class="price">
+                        <p>$ 40.00</p>
+                    </article>
+                    <article class="price"><input type="image" class="delete" src="close.png"></input></article>
+                </section>
+                <hr>
+                <section class="total">
+                    <section class="comment">
+                        <p class="comment1">Please leave special instructions below:</p>
+                        <textarea name="comment" class="comment2" cols="70" rows="8"></textarea>
+                    </section>
+
+
+                    <section class="subtotal">
+                        <p>Subtotal: $ 62.50</p>
+                        <input type="submit" value="UPDATE CART"><br>
+                        <input type="submit" value="CHECK OUT">
+                    </section>
+                </section>
+
+            </section>
+
+
+        </main>
+        <aside>
+            <header>
+                <h3>YOU MAY ALSO LIKE</h3>
+            </header>
+
+            <section>
+                <a href="#" class="propozycja"></a>
+                <a href="#" class="cenapropozycja">
+                    <p>Dragon Skinny Tank</p>
+                    <p class="cena">$16.00 USD</p>
+                </a>
+            </section>
+            <section>
+                <a href="#" class="propozycja2"></a>
+                <a href="#" class="cenapropozycja">
+                    <p>
+                        Van Gogh Denim Jacket</p>
+                    <p class="cena">$61.00 USD</p>
+                </a>
+            </section>
+            <section>
+                <a href="#" class="propozycja3"></a>
+                <a href="#" class="cenapropozycja">
+                    <p>Van Gogh Sunflowers Hoodie</p>
+                    <p class="cena">$48.00 USD</p>
+                </a>
+            </section>
+            <section>
+                <a href="#" class="propozycja4"></a>
+                <a href="#" class="cenapropozycja">
+                    <p>
+                        Private School Striped Sweater</p>
+                    <p class="cena">$38.00 USD</p>
+                </a>
+            </section>
+            <section>
+                <a href="#" class="propozycja5"></a>
+                <a href="#" class="cenapropozycja">
+                    <p>Pleated Prep Skirt</p>
+                    <p class="cena">$36.00 USD</p>
+                </a>
+            </section>
+        </aside>
+
+        <footer>
+            <article class="newsletter">
+                <figure class="fotanewsletter"><img src="newsletter.png" alt=""></figure>
+                <section class="formularz"><input class="email" type="text" placeholder="E-mail">
+
+                    <input class="polityka" type="checkbox" value="polityka">
+                    I read and understand Privacy Policy and Cookie Policy and I agree to receive
+                    commercial<br> information on the email address I have provided from Aesthetic.
+
+                    <a href="#" class="myButton2">SIGN UP</a>
+                </section>
+            </article>
+            <section class="informacje">
+                <h3>INFO</h3>
+                <section class="info0">
+                    <article class="info1">
+                        <ul>
+                            <li> <a href="#">DELIVERY & PAYMENT METHODS</a></li>
+                            <li><a href="#">RETURNS & REFUNDS</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </article>
+                    <article class="info2">
+                        <ul>
+                            <li> <a href="#">ABOUT US</a></li>
+                            <li><a href="#">CONTACT US</a></li>
+                            <li><a href="#">WORK</a></li>
+                            <li><a href="#">SHOPPING REGULATIONS</a></li>
+                            <li><a href="#">COOKIE POLICY</a></li>
+                            <li><a href="#">PRIVACY POLICY</a></li>
+                        </ul>
+                    </article>
+                </section>
+
+            </section>
+            <div class="kontakt0">
+                <img src="kontakt.png" alt="">
+            </div>
+
+
+            <p>&copy 2020 aesthetic.com. All rights reserved.</p>
+
+        </footer>
+    </div>
+
+
+
+
+</body>
+
+</html>

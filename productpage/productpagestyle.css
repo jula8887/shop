@@ -1,0 +1,638 @@
+body {
+    background-color: #E8E8E8;
+    margin: 0;
+    padding: 0;
+
+}
+
+.container {
+
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-areas:
+        "p p p"
+        "header header header"
+        "main main aside"
+        "footer footer footer";
+    margin: 0;
+    padding: 0;
+}
+
+
+p {
+    grid-area: p;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 0.6vw;
+    font-weight: bold;
+}
+
+header {
+    width: 100%;
+    margin: 0;
+    grid-area: header;
+}
+
+.logo0 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0;
+}
+
+.social {
+    display: flex;
+    flex-basis: 8%;
+}
+
+.social2 {
+    width: 2vw;
+    margin: 0.5vw;
+}
+
+
+.logo {
+    margin-bottom: 0;
+}
+
+.logo img {
+    align-self: center;
+    margin-bottom: 0;
+
+}
+
+.mojekonto {
+    background-color: #93A8AC;
+    border-radius: 8px;
+    padding: 0.5vw;
+    height: 20%;
+    flex-basis: 8%;
+
+    text-align: center;
+}
+
+.mojekonto a {
+    font-family: 'Quicksand', sans-serif;
+    color: #434952;
+    font-size: 2vh;
+    text-decoration: none;
+}
+
+nav {
+    margin: 0;
+    margin-bottom: 4vh;
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+    margin-top: 2vh;
+    border-bottom: 1px solid #434952;
+    border-top: 1px solid #434952;
+    justify-content: space-between;
+}
+
+nav div {
+    width: 10px;
+    height: 10px;
+}
+
+nav ul {
+
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 13vw;
+}
+
+nav li {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-right: solid 0.1vw #DE7A7A;
+    font-size: 1.1vw;
+}
+
+nav li:last-of-type {
+    border-right: none;
+}
+
+nav li a {
+    font-family: 'Quicksand', sans-serif;
+    color: #434952;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    color: #93A8AC;
+
+}
+
+#wyszukiwarka {
+    width: 15vw;
+    height: 2.5vh;
+    border: none;
+    background-color: aliceblue;
+    margin-top: 0;
+    font-family: 'Quicksand', sans-serif;
+    border-radius: 3px;
+
+}
+
+
+.row {
+    display: flex;
+    margin-left: 4vw;
+}
+
+.column {
+    float: left;
+    margin: 0.6vw;
+    margin-left: 0;
+}
+
+
+.column img {
+    opacity: 0.7;
+    cursor: pointer;
+    width: 8.5vw;
+}
+
+.column img:hover {
+    opacity: 1;
+}
+
+
+.row:after {}
+
+
+.container2 {
+    position: relative;
+    display: block;
+    width: 36vw;
+    margin-left: 4vw;
+}
+
+main {
+    display: flex;
+    grid-area: main;
+    padding-top: 8vh;
+
+}
+
+.doproduktu {
+    display: flex;
+
+}
+
+main section {
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    color: #434952;
+    font-size: 1.5vw;
+
+}
+
+.produktopis {
+    margin-left: 5vw;
+    width: 30vw;
+}
+
+
+h1 {
+    font-size: 2vw;
+    margin-bottom: 5vh;
+}
+
+
+main section header p {
+    font-size: 1.5vw;
+    margin-bottom: 5vh;
+}
+
+main section article {
+    margin: 3vw;
+}
+
+main section input {
+    width: 5vw;
+    font-size: 2rem;
+
+
+}
+
+.radio-toolbar {
+    margin: 10px;
+    margin-bottom: 2vw;
+}
+
+.radio-toolbar input[type="radio"] {
+    opacity: 0;
+    position: fixed;
+    width: 0;
+}
+
+.radio-toolbar label {
+    display: inline-block;
+    background-color: #E8E8E8;
+    padding: 10px 20px;
+    font-family: 'Quicksand', sans-serif;
+    color: #434952;
+    font-size: 16px;
+    border: 2px solid #434952;
+    border-radius: 2px;
+}
+
+.radio-toolbar label:hover {
+    background-color: #434952;
+    color: #E8E8E8;
+}
+
+.radio-toolbar input[type="radio"]:focus+label {
+    border: 2px solid #434952;
+}
+
+.radio-toolbar input[type="radio"]:checked+label {
+    background-color: #434952;
+    border-color: #434952;
+    color: #E8E8E8;
+
+}
+
+.radio-toolbar2 {
+    margin: 10px;
+    margin-bottom: 2vw;
+}
+
+.radio-toolbar2 input[type="radio"] {
+    opacity: 0;
+    position: fixed;
+    width: 0;
+}
+
+.radio-toolbar2 label {
+    display: inline-block;
+    background-color: #E8E8E8;
+    padding: 10px 20px;
+    font-family: 'Quicksand', sans-serif;
+    color: #434952;
+    font-size: 16px;
+    border: 2px solid #434952;
+    border-radius: 2px;
+}
+
+.radio-toolbar2 label:hover {
+    background-color: #434952;
+    color: #E8E8E8;
+}
+
+.radio-toolbar2 input[type="radio"]:focus+label {
+    border: 2px solid #434952;
+}
+
+.radio-toolbar2 input[type="radio"]:checked+label {
+    background-color: #434952;
+    border-color: #434952;
+    color: #E8E8E8;
+
+}
+
+
+input[type="number"] {
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+.number-input {
+    border: none;
+    display: inline-flex;
+    margin-top: 2vh;
+
+
+}
+
+.number-input,
+.number-input * {
+    box-sizing: border-box;
+
+}
+
+.number-input button {
+    outline: none;
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    margin: 0;
+    position: relative;
+
+    background-color: #434952;
+
+}
+
+.number-input button:before,
+.number-input button:after {
+    display: inline-block;
+    position: absolute;
+    content: '';
+    width: 1rem;
+    height: 2px;
+    background-color: #E8E8E8;
+    transform: translate(-50%, -50%);
+}
+
+.number-input button.plus:after {
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.number-input input[type=number] {
+    font-family: 'Quicksand', sans-serif;
+
+    min-width: 5vw;
+    padding: 1vw;
+    border: solid #ddd;
+    border-width: 0 2px;
+    font-size: 2rem;
+    height: 3rem;
+    font-weight: bold;
+    text-align: center;
+    background-color: #E8E8E8;
+    color: #434952;
+}
+
+.myButton {
+    box-shadow: 0px 10px 10px -3px #434952;
+    background: linear-gradient(to bottom, #434952 5%, #434952 100%);
+    background-color: #ffffff;
+    border-radius: 3px;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1vw;
+    font-weight: bold;
+    padding: 1vw 3vw;
+    text-decoration: none;
+    text-shadow: 1px 3px 2px #808080;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6vh;
+}
+
+.myButton:hover {
+    background: linear-gradient(to bottom, #93A8AC 5%, #93A8AC 100%);
+    background-color: #f6f6f6;
+}
+
+.myButton:active {
+    position: relative;
+    top: 1px;
+}
+
+
+aside {
+    grid-area: aside;
+    margin-top: 6vh;
+}
+
+aside a {
+    margin: 3rem;
+    margin-bottom: 0;
+}
+
+aside a:hover {
+    -webkit-box-shadow: 10px 17px 52px 0px rgba(0, 0, 0, 0.78);
+    -moz-box-shadow: 10px 17px 52px 0px rgba(0, 0, 0, 0.78);
+    box-shadow: 10px 17px 52px 0px rgba(0, 0, 0, 0.78);
+}
+
+.propozycja {
+    background-image: url(propozycja1.jpg);
+    background-size: contain;
+    height: 15vw;
+    width: 15vw;
+    display: flex;
+    transition: all 0.9s;
+
+}
+
+.propozycja:hover {
+    background-image: url(propozycja2.jpg);
+
+}
+
+.propozycja2 {
+    background-image: url(koszulka1.jpg);
+    background-size: contain;
+    height: 15vw;
+    width: 15vw;
+    display: flex;
+    transition: all 0.9s;
+
+}
+
+.propozycja2:hover {
+    background-image: url(koszulka2.jpg);
+
+}
+
+.propozycja3 {
+    background-image: url(koszulka3.jpg);
+    background-size: contain;
+    height: 15vw;
+    width: 15vw;
+    display: flex;
+    transition: all 0.9s;
+
+}
+
+.propozycja3:hover {
+    background-image: url(koszulka4.jpg);
+
+}
+
+.cenapropozycja {
+    font-family: 'Quicksand', sans-serif;
+    color: #434952;
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 0.5vw;
+    color: #434952;
+}
+
+.cenapropozycja p {
+    font-size: 2vh;
+    max-width: 15vw;
+    margin-left: 3rem;
+}
+
+.cenapropozycja:hover {
+    color: #93A8AC;
+}
+
+footer {
+    grid-area: footer;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #D8D8D8;
+    margin-top: 3vw;
+
+
+}
+
+footer article {
+    flex-basis: 100%;
+    display: flex;
+    margin-bottom: 0;
+    background-color: #93A8AC;
+}
+
+footer article figure {
+    flex-basis: 30%;
+    background-color: #93A8AC;
+    margin: 0;
+    padding-top: 1.5vh;
+}
+
+footer article figure img {
+    width: 75%;
+    margin-left: 8vw;
+
+}
+
+footer article section {
+    flex-basis: 70%;
+    background-color: #93A8AC;
+    margin-left: 15vw;
+    font-family: 'Quicksand', sans-serif;
+    color: #434952;
+
+}
+
+.email {
+
+    margin: 0;
+    width: 40.5vw;
+    margin-top: 3vh;
+    border-radius: 3px;
+    height: 3vh;
+    font-size: 2vh;
+    border: 0;
+    font-family: 'Quicksand', sans-serif;
+    display: block;
+}
+
+.polityka {
+    margin: 1vw;
+    width: 1vw;
+    height: 2vh;
+
+}
+
+.myButton2 {
+    box-shadow: 0px 10px 10px -3px #434952;
+    background: linear-gradient(to bottom, #434952 5%, #434952 100%);
+    border-radius: 3px;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2vh;
+    font-weight: bold;
+    padding: 0.5vw 18.4vw;
+    text-decoration: none;
+    text-shadow: 1px 3px 2px #808080;
+    margin-top: 2rem;
+}
+
+.myButton2:hover {
+    background: linear-gradient(to bottom, #D8D8D8 5%, #D8D8D8 100%);
+    background-color: #ef027d;
+    color: #434952;
+
+}
+
+.myButton2:active {
+    position: relative;
+    top: 1px;
+}
+
+footer p {
+    font-family: 'Quicksand', sans-serif;
+    color: #434952;
+    background-color: #D8D8D8;
+    padding-top: 1rem;
+}
+
+.informacje {
+    flex-basis: 60%;
+    background-color: #D8D8D8;
+    padding-top: 2rem;
+
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    color: #434952;
+    margin-top: 0;
+
+}
+
+.info0 {
+    display: flex;
+}
+
+.info1 {
+    flex-basis: 50%;
+    background-color: #D8D8D8;
+
+}
+
+.info2 {
+    flex-basis: 50%;
+    background-color: #D8D8D8;
+
+}
+
+.kontakt0 {
+    flex-basis: 40%;
+    background-color: #D8D8D8;
+
+}
+
+.kontakt0 img {
+    height: 302px;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.informacje ul {
+    list-style: none;
+}
+
+.informacje li a {
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+    color: #434952;
+
+}
+
+.informacje li a:hover {
+    color: #93A8AC;
+}
+
+.informacje li {
+    margin: 1rem;
+}
